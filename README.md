@@ -28,6 +28,10 @@ locker.on('locked', () => {
 locker.on('error', (err) => {
     // app with this id is already running
 });
+
+locker.unlock(() => {
+    // lock was removed        
+});
 ```
 Lock Types
 ```ts
